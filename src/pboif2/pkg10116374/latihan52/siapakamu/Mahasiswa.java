@@ -10,8 +10,8 @@ package pboif2.pkg10116374.latihan52.siapakamu;
  * @author Acromyrmex
  */
 class Mahasiswa extends Manusia {
-  private String nim, kelas, nama;
-  private int        umur;
+  private String nim, kelas, nama2;
+  private int umur2;
 
     public String getNim() {
         return nim;
@@ -22,18 +22,19 @@ class Mahasiswa extends Manusia {
     }
     
     public String getNama() {
-        return nama;
+        return nama2;
     }
     
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setNama(String nama2) {
+        this.nama2 = nama2;
     }  
     
-    public void setUmur(String umur) {
-        this.umur = umur;
-    
-    public String getUmur() {
-        return umur;
+     public int getUmur() {
+        return umur2;
+    }
+
+    public void setUmur(int umur2) {
+        this.umur2 = umur2;
     }
 
     public void setKelas(String kelas) {
@@ -41,7 +42,7 @@ class Mahasiswa extends Manusia {
     }
     
     public void kelasApa() {
-        System.out.println("Saya "+nama+" umur "+umur+" tahun sedang belajar"
+        System.out.println("Saya "+nama2+" umur "+umur2+" tahun sedang belajar"
                 + " di kelas " + kelas);
     }
 
@@ -49,4 +50,5 @@ class Mahasiswa extends Manusia {
     public void siapaKamu() {
         System.out.println("Saya Mahasiswa");
     }
+
 }

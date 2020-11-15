@@ -10,8 +10,18 @@ package pboif2.pkg10116374.latihan52.siapakamu;
  * @author Acromyrmex
  */
 class Dosen extends Manusia {
-    private String nip, mataKuliah;
+    private String nip, mataKuliah, nama1;
+    private int umur1;
+    
+     public int getUmur() {
+        return umur1;
+    }
 
+    public void setUmur(int umur1) {
+        this.umur1 = umur1;
+    }
+    
+    
     public String getNip() {
         return nip;
     }
@@ -28,8 +38,16 @@ class Dosen extends Manusia {
         this.mataKuliah = mataKuliah;
     }
     
+    public String getNama() {
+        return nama1;
+    }
+
+    public void setNama(String nama1) {
+        this.nama1 = nama1;
+    }
+    
     public void mengajarApa() {
-        System.out.println("Saya "+nama+" umur "+umur+" tahun sedang mengajar"
+        System.out.println("Saya "+nama1+" umur "+umur1+" tahun sedang mengajar"
                 + " matakuliah " + mataKuliah);
     }
 
@@ -38,7 +56,4 @@ class Dosen extends Manusia {
         System.out.println("Saya Dosen");
     }
 
-    void setNama(String rizki_Adam_Kurniawan) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
